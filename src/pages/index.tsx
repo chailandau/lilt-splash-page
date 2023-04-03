@@ -1,3 +1,4 @@
+import FtImages from '@/components/FtImages'
 import PageHead from '@/components/Head'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
@@ -8,13 +9,11 @@ export default function Home() {
   return (
     <>
       <PageHead />
-      <Wrapper>
-        <Header />
-        <main>
-          <Hero />
-        </main>
-
-      </Wrapper>
+      <Header />
+      <main>
+        <Hero />
+        <FtImages />
+      </main>
     </>
   )
 }
