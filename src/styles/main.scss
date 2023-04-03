@@ -1,0 +1,66 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+
+html {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: $light-gray;
+    background-color: $dark-blue;
+}
+
+.wrapper {
+    padding: rem(30);
+}
+
+header {
+    padding-bottom: 30%;
+    border-bottom: 1px solid $neon-red;
+    margin-bottom: rem(40);
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+
+#hero {
+    ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+        align-items: center;
+        li {
+            color: $neon-green;
+            text-transform: uppercase;
+            text-align: center;
+            @include font(22, 28, 0.02);
+            &:nth-of-type(even) {
+                color: $neon-blue;
+            }
+        }
+    }
+    .video {
+        margin-top: rem(50);
+        height: 0;
+        padding-bottom: 59%;
+        position: relative;
+        img {
+            z-index: 1;
+        }
+        & > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+            z-index: 2;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+// to rem
+$rem: 16;
+@function rem($val) {
+    @return calc($val/$rem) + rem;
+}
+
+// font size, tracking, leading
+@mixin font($font-size, $leading, $tracking) {
+    font-size: calc($font-size / $rem) + rem;
+    line-height: calc($leading / $rem) + rem;
+    letter-spacing: $tracking + em;
+}
+
+// media queries
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin mobile-lg {
+    @media screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin desktop-xs {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin desktop-sm {
+    @media screen and (min-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin desktop-lg {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
