@@ -1,3 +1,5 @@
+import ComingSoon from '@/components/ComingSoon'
+import Footer from '@/components/Footer'
 import FtImages from '@/components/FtImages'
 import PageHead from '@/components/Head'
 import Header from '@/components/Header'
@@ -13,6 +15,8 @@ export default function Home() {
       <main>
         <Hero />
         <FtImages />
+        <ComingSoon />
+        <Footer />
       </main>
     </>
   )

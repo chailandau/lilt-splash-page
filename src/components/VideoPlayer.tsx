@@ -13,6 +13,7 @@ const VideoPlayer: FC<VideoPlayerProps> = ({ url, playerRef }) => {
                 controls
                 muted
                 playing
+                loop
             />
             <Image
                 src='/images/hero-video-thumb.jpg'

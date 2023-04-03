@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 
 export interface WrapperProps {
     children?: ReactNode;
+    id?: string;
 }
 
 export interface VideoPlayerProps {

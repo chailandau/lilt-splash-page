@@ -3,8 +3,9 @@ import Wrapper from "./Wrapper"
 
 const FtImages = () => {
     return (
+
         <div id='ft-images'>
-            <Wrapper>
+            <Wrapper >
                 <div className="image blue-glow-border">
                     <Image src='/images/splash-img-1.jpg' alt="Outdoor laser tag tents" fill />
                 </div>
@@ -13,6 +14,7 @@ const FtImages = () => {
                 </div>
             </Wrapper>
         </div>
+
     )
 }
 

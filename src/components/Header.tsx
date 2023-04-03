@@ -14,6 +14,7 @@ const Header = () => {
                         priority
                     />
                 </div>
+
             </Wrapper>
         </header>
     )

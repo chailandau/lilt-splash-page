@@ -3,9 +3,9 @@ import { WrapperProps } from "./ComponentTypes"
 
 
 
-const Wrapper: FC<WrapperProps> = ({ children }) => {
+const Wrapper: FC<WrapperProps> = ({ id, children }) => {
     return (
-        <div className="wrapper">
+        <div className="wrapper" id={id}>
             {children && children}
         </div>
     )
