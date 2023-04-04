@@ -52,6 +52,14 @@ p {
     @include transition;
 }
 
+h1,
+p {
+    max-width: rem(300);
+    @include mobile-lg {
+        max-width: unset;
+    }
+}
+
 .button {
     display: block;
     background-color: $neon-blue;
